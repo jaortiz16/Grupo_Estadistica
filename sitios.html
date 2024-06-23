@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        
+        html {
+    scroll-behavior: smooth;
+}
+
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+#bg-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+}
+
+    </style>
+</head>
+<body>
+    <!--
+// v0 by Vercel.
+// https://v0.dev/t/hYnLEX9bLJN
+-->
+
+
+<div class="video-background">
+  <video autoplay muted loop id="bg-video">
+      <source src="/fondo.mp4" type="video/mp4">
+      Tu navegador no soporta la etiqueta de video.
+  </video>
+</div>
+
+<div class="flex flex-col min-h-[100dvh] ">
+    <header class="sticky top-0 z-50 w-full bg-background/80 backdrop-blur text-white">
+        <div class="container flex h-16 items-center justify-between px-4 md:px-6">
+          <a class="flex items-center gap-2" href="#">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="h-6 w-6"
+            >
+              <path d="m7 11 4.08 10.35a1 1 0 0 0 1.84 0L17 11"></path>
+              <path d="M17 7A5 5 0 0 0 7 7"></path>
+              <path d="M17 7a2 2 0 0 1 0 4H7a2 2 0 0 1 0-4"></path>
+            </svg>
+            <span class="text-lg font-bold">Helados polito</span>
+          </a>
+          <div class="hidden md:flex">
+            <nav
+              aria-label="Main"
+              data-orientation="horizontal"
+              dir="ltr"
+              class="relative z-10 flex max-w-max flex-1 items-center justify-center"
+            >
+              <div style="position:relative">
+                <ul
+                  data-orientation="horizontal"
+                  class="group flex flex-1 list-none items-center justify-center space-x-1"
+                  dir="ltr"
+                >
+                  <li>
+                    <a
+                      href="/index.html"
+                      class="group inline-flex h-9 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50"
+                      data-radix-collection-item=""
+                    >
+                      Inicio
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="group inline-flex h-9 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50"
+                      data-radix-collection-item=""
+                    >
+                      Parciales
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="group inline-flex h-9 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50"
+                      data-radix-collection-item=""
+                    >
+                      Grupo
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="group inline-flex h-9 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50"
+                      data-radix-collection-item=""
+                    >
+                      Contact
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="absolute left-0 top-full flex justify-center"></div>
+            </nav>
+          </div>
+        </div>
+        <div class="md:hidden"></div>
+      </header>
+      <section class="w-full py-12 md:py-24 lg:py-32 min-h-screen flex items-center text-white">
+        <div class="container flex flex-col items-center justify-center gap-4 px-4 text-center md:px-6">
+          <div class="space-y-3">
+            <h1 class="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">Primer Parcial</h1>
+            <p class="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+              Videos y enlaces a los documentos
+            </p>
+          </div>
+          <a
+            class="inline-flex h-10 items-center justify-center rounded-md  px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 text-black bg-white mt-10"
+            href="/video/Video_informativo.mp4"
+          >
+            Videos
+          </a>
+        </div>
+      </section>
+    <div class="flex flex-col gap-12 w-full">
+        
+        <section class="w-full pt-12 flex items-center justify-center text-white py-20 bg-white" id="videos">
+            <div class="container px-4 md:px-6">
+              <h2 class="text-3xl font-bold text-center mb-8 text-black">Videos Informativos</h2> 
+              <div class="grid gap-6 lg:grid-cols-2 lg:gap-12">
+                <div class="flex flex-col gap-4 bg-slate-100 text-black p-10 rounded-lg ">
+                  <div class="aspect-video rounded-xl overflow-hidden">
+                    <video src="/video/video_educativo.mp4" controls class="w-full h-full object-cover" data-id="15"></video>
+                    <span class="w-full h-full object-cover rounded-md bg-gray-300"></span>
+                  </div>
+                  <div>
+                    <h3 class="text-2xl font-bold">Video 1</h3>
+                    <p class="text-gray-400">Video informativo 1.</p>
+                  </div>
+                </div>
+                <div class="flex flex-col gap-4 bg-slate-100 text-black p-10 rounded-lg">
+                  <div class="aspect-video rounded-xl overflow-hidden">
+                    <video src="/video/Video_informativo.mp4" controls class="w-full h-full object-cover" data-id="15"></video>
+                    <span class="w-full h-full object-cover rounded-md bg-gray-300"></span>
+                  </div>
+                  <div>
+                    <h3 class="text-2xl font-bold">Video 2</h3>
+                    <p class="text-gray-400">Video informativo 2.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+          <div class="bg-white p-20">
+            <h1 class="text-3xl font-bold text-center p-5">Preguntas</h1>
+            <section class="w-full">
+              <h3 class="text-3xl font-bold text-center p-5 mb-10 text-indigo-600 underline"><a href="/informe.pdf">Link del Informe</a></h3>
+              
+              <div class="container px-4 md:px-6 grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3">
+                  <div class="rounded-lg border bg-card text-card-foreground shadow-sm bg-slate-50" data-v0-t="card">
+                      <div class="flex flex-col space-y-1.5 p-6">
+                          <h3 class="whitespace-nowrap text-2xl font-semibold leading-none tracking-tight">Pregunta 2</h3>
+                          <p class="text-sm text-muted-foreground">
+                              Tema de su pregunta
+                          </p>
+                      </div>
+                      <div class="p-6 flex flex-col gap-2 text-indigo-600">
+                        <a class="text-sm hover:underline" href="/JZ/Probabilidad_normal.xlsx">
+                            Pregunta
+                        </a>
+                        <a class="text-sm hover:underline" href="/JZ/Jamovi_Pregunta2.pdf">
+                            Manual Jamovi
+                        </a>
+                        <a class="text-sm hover:underline" href="/JZ/MANUAL DE EXCEL_ Pregunta2.pdf">
+                            Manual Excel
+                        </a>
+                        <a class="text-sm hover:underline" href="/JZ/Análisis Estadístico_Pregunta2.docx">
+                            Word Resuelto
+                        </a>
+                        <a class="text-sm hover:underline" href="/JZ/Excel_Pregunta2.xlsx">
+                            Excel Resuelto
+                        </a>
+                        <a class="text-sm hover:underline" href="/JZ/Jamovi_Pregunta2.pdf">
+                            Jamovi
+                        </a>
+                    </div>
+                  </div>
+                  <div class="rounded-lg border bg-card text-card-foreground shadow-sm bg-slate-50" data-v0-t="card">
+                      <div class="flex flex-col space-y-1.5 p-6">
+                          <h3 class="whitespace-nowrap text-2xl font-semibold leading-none tracking-tight">Pregunta 3</h3>
+                          <p class="text-sm text-muted-foreground">
+                              Tema de su pregunta
+                          </p>
+                      </div>
+                      <div class="p-6 flex flex-col gap-2 text-indigo-600">
+                          <a class="text-sm hover:underline" href="#">
+                              Pregunta
+                          </a>
+                          <a class="text-sm hover:underline" href="/AR/Jamovi_Pregunta3.pdf">
+                              Manual Jamovi
+                          </a>
+                          <a class="text-sm hover:underline" href="/AR/Manual_Excel_Pregunta3.pdf">
+                              Manual Excel
+                          </a>
+                          <a class="text-sm hover:underline" href="/AR/analisis_estadistico.docx">
+                              Word Resuelto
+                          </a>
+                          <a class="text-sm hover:underline" href="/AR/Manual_Excel_Pregunta3.pdf">
+                              Excel Resuelto
+                          </a>
+                          <a class="text-sm hover:underline" href="/AR/Jamovi_Pregunta3.pdf">
+                              Jamovi
+                          </a>
+                      </div>
+                  </div>
+                  <div class="rounded-lg border bg-card text-card-foreground shadow-sm bg-slate-50" data-v0-t="card">
+                      <div class="flex flex-col space-y-1.5 p-6">
+                          <h3 class="whitespace-nowrap text-2xl font-semibold leading-none tracking-tight">Pregunta 5</h3>
+                          <p class="text-sm text-muted-foreground">
+                              Tema de su pregunta
+                          </p>
+                      </div>
+                      <div class="p-6 flex flex-col gap-2 text-indigo-600">
+                          <a class="text-sm hover:underline" href="#">
+                              Pregunta
+                          </a>
+                          <a class="text-sm hover:underline" href="/VG/Manual_Jamovi_Preg5.pdf">
+                              Manual Jamovi
+                          </a>
+                          <a class="text-sm hover:underline" href="/VG/Manual_Jamovi_Preg5.pdf">
+                              Manual Excel
+                          </a>
+                          <a class="text-sm hover:underline" href="/VG/Pregunta5_Dist.docx">
+                              Word Resuelto
+                          </a>
+                          <a class="text-sm hover:underline" href="/VG/Pregunta5_Dist.xlsx">
+                              Excel Resuelto
+                          </a>
+                          <a class="text-sm hover:underline" href="/VG/Pregunta5_Dist_Jamovi.pdf">
+                              Jamovi
+                          </a>
+                      </div>
+                  </div>
+              </div>
+          </section>
+            
+            <section class="w-full mt-4">
+              <div class="container px-4 md:px-6 grid gap-6 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2">
+                  <div class="rounded-lg border bg-card text-card-foreground shadow-sm bg-slate-50" data-v0-t="card">
+                      <div class="flex flex-col space-y-1.5 p-6">
+                          <h3 class="whitespace-nowrap text-2xl font-semibold leading-none tracking-tight">Pregunta 6</h3>
+                          <p class="text-sm text-muted-foreground">
+                              Tema de su pregunta
+                          </p>
+                      </div>
+                      <div class="p-6 flex flex-col gap-2 text-indigo-600">
+                          <a class="text-sm hover:underline" href="#">
+                              Pregunta
+                          </a>
+                          <a class="text-sm hover:underline" href="/AO/Manual_Jamovi_Pregunta6.pdf">
+                              Manual Jamovi
+                          </a>
+                          <a class="text-sm hover:underline" href="/AO/Manual_Excel_Pregunta6.pdf">
+                              Manual Excel
+                          </a>
+                          <a class="text-sm hover:underline" href="/AO/analisis_estadistico.docx">
+                              Word Resuelto
+                          </a>
+                          <a class="text-sm hover:underline" href="/AO/Excel_Pregunta6.xlsx">
+                              Excel Resuelto
+                          </a>
+                          <a class="text-sm hover:underline" href="/AO/Jamovi_Pregunta6.pdf">
+                              Jamovi
+                          </a>
+                      </div>
+                  </div>
+                  <div class="rounded-lg border bg-card text-card-foreground shadow-sm bg-slate-50" data-v0-t="card">
+                      <div class="flex flex-col space-y-1.5 p-6">
+                          <h3 class="whitespace-nowrap text-2xl font-semibold leading-none tracking-tight">Pregunta 8</h3>
+                          <p class="text-sm text-muted-foreground">
+                              Tema de su pregunta
+                          </p>
+                      </div>
+                      <div class="p-6 flex flex-col gap-2 text-indigo-600">
+                          <a class="text-sm hover:underline" href="#">
+                              Pregunta
+                          </a>
+                          <a class="text-sm hover:underline" href="/MM/Jamovi_Pregunta8.pdf">
+                              Manual Jamovi
+                          </a>
+                          <a class="text-sm hover:underline" href="/MM/ManualExcel_Pregunta8.pdf">
+                              Manual Excel
+                          </a>
+                          <a class="text-sm hover:underline" href="/MM/analisis_estadistico.docx">
+                              Word Resuelto
+                          </a>
+                          <a class="text-sm hover:underline" href="/MM/Excel_Pregunta8.xlsx">
+                              Excel Resuelto
+                          </a>
+                          <a class="text-sm hover:underline" href="/MM/Jamovi_Pregunta8.pdf">
+                              Jamovi
+                          </a>
+                      </div>
+                  </div>
+              </div>
+          </section>          
+          </div>
+          
+    </div>
+  </div>
+</body>
+</html>
