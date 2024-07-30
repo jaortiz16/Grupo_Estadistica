@@ -7,30 +7,14 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         
-        html {
+
+body {
+    background-image: url('/fondo1.jpg');
+    background-size: cover; /* Ajusta la imagen al tamaño de la ventana del navegador */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-attachment: fixed;
     scroll-behavior: smooth;
-}
-
-.video-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-    z-index: -1;
-}
-
-#bg-video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -1;
-    transform: translate(-50%, -50%);
 }
 
     </style>
@@ -40,14 +24,6 @@
 // v0 by Vercel.
 // https://v0.dev/t/hYnLEX9bLJN
 -->
-
-
-<div class="video-background">
-  <video autoplay muted loop id="bg-video">
-      <source src="/fondo.mp4" type="video/mp4">
-      Tu navegador no soporta la etiqueta de video.
-  </video>
-</div>
 
 <div class="flex flex-col min-h-[100dvh] ">
     <header class="sticky top-0 z-50 w-full bg-background/80 backdrop-blur text-white">
@@ -86,7 +62,7 @@
                 >
                   <li>
                     <a
-                      href="/index.html"
+                      href="#"
                       class="group inline-flex h-9 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50"
                       data-radix-collection-item=""
                     >
@@ -138,9 +114,9 @@
           </div>
           <a
             class="inline-flex h-10 items-center justify-center rounded-md  px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 text-black bg-white mt-10"
-            href="/video/Video_informativo.mp4"
+            href="https://drive.google.com/drive/folders/12RRy1pBUaQGCmL92AwR2La7KsInZwNvR?usp=sharing"
           >
-            Videos
+            Drive
           </a>
         </div>
       </section>
@@ -156,8 +132,8 @@
                     <span class="w-full h-full object-cover rounded-md bg-gray-300"></span>
                   </div>
                   <div>
-                    <h3 class="text-2xl font-bold">Video 1</h3>
-                    <p class="text-gray-400">Video informativo 1.</p>
+                    <h3 class="text-2xl font-bold">Video Educativo</h3>
+                    <p class="text-gray-400">El video educativo.</p>
                   </div>
                 </div>
                 <div class="flex flex-col gap-4 bg-slate-100 text-black p-10 rounded-lg">
@@ -166,8 +142,8 @@
                     <span class="w-full h-full object-cover rounded-md bg-gray-300"></span>
                   </div>
                   <div>
-                    <h3 class="text-2xl font-bold">Video 2</h3>
-                    <p class="text-gray-400">Video informativo 2.</p>
+                    <h3 class="text-2xl font-bold">Video Informativo</h3>
+                    <p class="text-gray-400">Video informativo .</p>
                   </div>
                 </div>
               </div>
@@ -184,13 +160,10 @@
                       <div class="flex flex-col space-y-1.5 p-6">
                           <h3 class="whitespace-nowrap text-2xl font-semibold leading-none tracking-tight">Pregunta 2</h3>
                           <p class="text-sm text-muted-foreground">
-                              Tema de su pregunta
+                              Por: Josue Zambrano
                           </p>
                       </div>
                       <div class="p-6 flex flex-col gap-2 text-indigo-600">
-                        <a class="text-sm hover:underline" href="/JZ/Probabilidad_normal.xlsx">
-                            Pregunta
-                        </a>
                         <a class="text-sm hover:underline" href="/JZ/Jamovi_Pregunta2.pdf">
                             Manual Jamovi
                         </a>
@@ -212,13 +185,10 @@
                       <div class="flex flex-col space-y-1.5 p-6">
                           <h3 class="whitespace-nowrap text-2xl font-semibold leading-none tracking-tight">Pregunta 3</h3>
                           <p class="text-sm text-muted-foreground">
-                              Tema de su pregunta
+                              Por: Andres Revelo
                           </p>
                       </div>
                       <div class="p-6 flex flex-col gap-2 text-indigo-600">
-                          <a class="text-sm hover:underline" href="#">
-                              Pregunta
-                          </a>
                           <a class="text-sm hover:underline" href="/AR/Jamovi_Pregunta3.pdf">
                               Manual Jamovi
                           </a>
@@ -240,13 +210,10 @@
                       <div class="flex flex-col space-y-1.5 p-6">
                           <h3 class="whitespace-nowrap text-2xl font-semibold leading-none tracking-tight">Pregunta 5</h3>
                           <p class="text-sm text-muted-foreground">
-                              Tema de su pregunta
+                              Por : Vinicio Guaman
                           </p>
                       </div>
                       <div class="p-6 flex flex-col gap-2 text-indigo-600">
-                          <a class="text-sm hover:underline" href="#">
-                              Pregunta
-                          </a>
                           <a class="text-sm hover:underline" href="/VG/Manual_Jamovi_Preg5.pdf">
                               Manual Jamovi
                           </a>
@@ -273,13 +240,10 @@
                       <div class="flex flex-col space-y-1.5 p-6">
                           <h3 class="whitespace-nowrap text-2xl font-semibold leading-none tracking-tight">Pregunta 6</h3>
                           <p class="text-sm text-muted-foreground">
-                              Tema de su pregunta
+                              Por: Andres Ortiz
                           </p>
                       </div>
                       <div class="p-6 flex flex-col gap-2 text-indigo-600">
-                          <a class="text-sm hover:underline" href="#">
-                              Pregunta
-                          </a>
                           <a class="text-sm hover:underline" href="/AO/Manual_Jamovi_Pregunta6.pdf">
                               Manual Jamovi
                           </a>
@@ -301,26 +265,23 @@
                       <div class="flex flex-col space-y-1.5 p-6">
                           <h3 class="whitespace-nowrap text-2xl font-semibold leading-none tracking-tight">Pregunta 8</h3>
                           <p class="text-sm text-muted-foreground">
-                              Tema de su pregunta
+                              Por: Mathius Moyano
                           </p>
                       </div>
                       <div class="p-6 flex flex-col gap-2 text-indigo-600">
-                          <a class="text-sm hover:underline" href="#">
-                              Pregunta
-                          </a>
                           <a class="text-sm hover:underline" href="/MM/Jamovi_Pregunta8.pdf">
                               Manual Jamovi
                           </a>
-                          <a class="text-sm hover:underline" href="/MM/ManualExcel_Pregunta8.pdf">
+                          <a class="text-sm hover:underline" href="MM/ManualExcel_Pregunta8.pdf">
                               Manual Excel
                           </a>
-                          <a class="text-sm hover:underline" href="/MM/analisis_estadistico.docx">
+                          <a class="text-sm hover:underline" href="MM/analisis_estadistico.docx">
                               Word Resuelto
                           </a>
-                          <a class="text-sm hover:underline" href="/MM/Excel_Pregunta8.xlsx">
+                          <a class="text-sm hover:underline" href="MM/Excel_Pregunta8.xlsx">
                               Excel Resuelto
                           </a>
-                          <a class="text-sm hover:underline" href="/MM/Jamovi_Pregunta8.pdf">
+                          <a class="text-sm hover:underline" href="MM/Jamovi_Pregunta8.pdf">
                               Jamovi
                           </a>
                       </div>
